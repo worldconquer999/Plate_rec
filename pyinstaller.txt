@@ -1,0 +1,67 @@
+pyinstaller --noconfirm --onedir --console --add-data "/home/h2n/ai-engine-main/src/ai_engine/YOLOX;YOLOX/" --add-data "/home/h2n/ai-engine-main/pretrained;pretrained/" --add-data "/home/h2n/ai-engine-main/src/static;static/" --add-data "/home/h2n/ai-engine-main/.venv/Lib/site-packages/openvino;openvino/" --add-data "/home/h2n/ai-engine-main/.env;." --paths "/home/h2n/ai-engine-main/.venv/Lib/site-packages/cv2" --paths "/home/h2n/ai-engine-main/src/ai_engine/YOLOX" --paths "/home/h2n/ai-engine-main"  "/home/h2n/ai-engine-main/src/app.py"
+
+
+
+
+pyinstaller --noconfirm --onedir --console \
+    --add-data "/home/h2n/ai-engine-main/src/ai_engine/YOLOX:YOLOX/" \
+    --add-data "/home/h2n/ai-engine-main/pretrained:pretrained/" \
+    --add-data "/home/h2n/ai-engine-main/src/static:static/" \
+    --add-data "/home/h2n/ai-engine-main/.venv/Lib/site-packages/openvino:openvino/" \
+    --add-data "/home/h2n/ai-engine-main/.env:." \
+    --paths "/home/h2n/ai-engine-main/.venv/Lib/site-packages/cv2" \
+    --paths "/home/h2n/ai-engine-main/src/ai_engine/YOLOX" \
+    --paths "/home/h2n/ai-engine-main" \
+    "/home/h2n/ai-engine-main/src/app.py"
+
+
+pyinstaller --noconfirm --onedir --console --add-data "/home/h2n/anaconda3/envs/hai/lib/python3.9/site-packages/ultralytics/cfg/default.yaml:ultralytics/cfg" --add-data "/home/h2n/ai-engine-main/pretrained:pretrained/" --add-data "/home/h2n/ai-engine-main/.venv/Lib/site-packages/openvino:openvino/"  --clean src/app.py
+
+
+pyinstaller --noconfirm --onedir --console \
+    --add-data "/home/h2n/anaconda3/envs/hai/lib/python3.9/site-packages/ultralytics/cfg/default.yaml:ultralytics/cfg" \
+    --add-data "/home/h2n/anaconda3/envs/hai/lib/python3.9/site-packages/openvino:openvino/" \
+    --clean src/app.py
+
+
+pyinstaller --noconfirm --onedir --console ^
+    --add-data "C:\\Users\\OS\\anaconda3\\envs\\hai\\Lib\\site-packages\\ultralytics\\cfg\\default.yaml;ultralytics\\cfg" ^
+    --add-data "C:\\Users\\OS\\anaconda3\\envs\\hai\\Lib\\site-packages\\openvino;openvino" ^
+    --clean src\\app.py
+
+
+#My DEBUG History in Window
+
+
+
+pyinstaller --noconfirm --onedir --console ^
+    --add-data "C:\\Users\\OS\\anaconda3\\envs\\hai\\Lib\\site-packages\\ultralytics\\cfg\\default.yaml;ultralytics\\cfg" ^
+    --add-data "C:\\Users\\OS\\anaconda3\\envs\\hai\\Lib\\site-packages\\openvino;openvino" ^
+    --add-data "D:\\techpro\\ai-engine-main\\pretrained_models\\best.pt;pretrained_models" ^
+    --add-data "D:\\techpro\\ai-engine-main\\pretrained_models\\ocr96\\namhoai96.xml;pretrained_models\\ocr96" ^
+    --add-data "D:\\techpro\\ai-engine-main\\pretrained_models\\ocr96\\namhoai96.bin;pretrained_models\\ocr96" ^
+    --add-data "D:\\techpro\\ai-engine-main\\src\\core\\fonts\\ppocr_keys_v1.txt;core\\fonts" ^
+    --add-data "D:\\techpro\\ai-engine-main\\src\\static\\swagger-ui.css;static" ^
+    --add-data "D:\\techpro\\ai-engine-main\\src\\static\\swagger-ui-bundle.js;static" ^
+    --add-data "D:\\techpro\\ai-engine-main\\src\\static\\redoc.standalone.js;static" ^
+    --clean src\\app.py
+
+
+
+
+
+
+#Mine 
+
+pyinstaller --noconfirm --onedir --console \
+    --add-data "/home/hquanhh/data_plate/ai-engine-main/pretrained:pretrained/" \
+    --add-data "/home/hquanhh/data_plate/ai-engine-main/src/static:static/" \
+    --add-data "/home/hquanhh/anaconda3/envs/vtv/lib/python3.9/site-packages/openvino:openvino/" \
+    --add-data "/home/hquanhh/anaconda3/envs/vtv/lib/python3.9/site-packages/uvicorn:uvicorn/" \
+    --add-data "/home/hquanhh/anaconda3/envs/vtv/lib/python3.9/site-packages/fastapi:fastapi/" \
+    --add-data "/home/hquanhh/anaconda3/envs/vtv/lib/python3.9/site-packages/starlette:starlette/" \
+    --add-data "/home/hquanhh/anaconda3/envs/vtv/lib/python3.9/site-packages/pydantic:pydantic/" \
+    --add-data "/home/hquanhh/data_plate/ai-engine-main/.env:." \
+    --paths "/home/hquanhh/anaconda3/envs/vtv/lib/python3.9/site-packages/cv2" \
+    --paths "/home/hquanhh/data_plate/ai-engine-main" \
+    "/home/hquanhh/data_plate/ai-engine-main/src/app.py"
